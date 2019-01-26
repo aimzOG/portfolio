@@ -1,7 +1,10 @@
 body {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
+  background-image: MaxPixel.freegreatpicture.com-Wallpaper-Background-Fuschia-Dark-Pink-Texture-990085.jpg;
+  background-size: cover;
 }
 
-nav {
-  hover: highlight;
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
 }
