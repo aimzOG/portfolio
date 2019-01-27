@@ -7,7 +7,7 @@ img {
   position: relative;
 }
 
-.career {
+.align-left {
   position: absolute;
   left: 0;
   top: 318px;
@@ -15,10 +15,18 @@ img {
   padding-left: 70px
 }
 
-.student {
+.align-right {
   position: absolute;
   right: 0;
   top: 318px;
   width: 300px;
   padding-right: 70px
+}
+
+.centered {
+  align-content: center;
+}
+
+ul {
+  align-content: center;
 }
