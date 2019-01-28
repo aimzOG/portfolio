@@ -1,3 +1,5 @@
+/* would like to change this to global.css for future projects, but wanted
+to follow the assignment instructions for "stylesheets.css"*/
 body {
   background-image: url("../images/purple-background.jpg");
   background-size: cover;
@@ -10,6 +12,7 @@ body {
 h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 80px;
+  text-shadow: -3px 6px 3px black;
 }
 
 nav {
@@ -19,19 +22,21 @@ nav {
 
 h3 {
   font-size: 30px;
+  text-align: center;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 
 nav a {
   position: relative;
   display: inline-block;
+  text-decoration: none;
 }
 
-/* this makes the underline for hrefs */
+/* this makes the underline for nav hrefs */
 nav a::after {
   transition: all .2s ease-in-out;
   content: "";
@@ -52,14 +57,31 @@ a:visited {
   color: white;
 }
 
+/* shows which tab is the page you're on */
 .active::after {
   width: 100%;
 }
 
+/* space between nav & footer */
 .content {
   min-height: 150px;
 }
 
 footer {
   text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+}
+
+footer a.github {
+  background-image: url('../images/GitHub-Mark-Light-64px.png');
+}
+
+footer a.linkedin {
+  background-image: url('../images/In-2C-41px-R.png');
 }

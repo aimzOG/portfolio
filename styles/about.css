@@ -11,16 +11,22 @@ img {
   position: absolute;
   left: 70px;
   top: 318px;
-  width: 300px;
+  width: 350px;
   box-sizing: border-box;
+  text-align: justify;
 }
 
 .align-right {
   position: absolute;
   right: 70px;
   top: 318px;
-  width: 300px;
+  width: 350px;
   box-sizing: border-box;
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
 }
 
 ul {

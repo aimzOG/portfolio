@@ -1,0 +1,16 @@
+ul {
+  margin-top: 40px;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.underline {
+  text-decoration: underline;
+}
