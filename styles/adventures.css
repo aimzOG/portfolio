@@ -1,0 +1,42 @@
+img {
+  max-width: 200px;
+  height: auto;
+}
+
+body {
+  background-repeat: repeat;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 4rem;
+}
+
+.travel-text {
+  flex: 1;
+  justify-content: flex-end;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.cooking-text {
+  flex: 1;
+  justify-content: flex-end;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+aside {
+  flex: 2;
+  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 150px 150px 150px;
+}
+
+aside > div {
+  grid-gap: 2px;
+  display: flex;
+  border: 2px solid black;
+}
