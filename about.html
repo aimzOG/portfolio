@@ -3,16 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Aimee's portfolio website about bio page">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Aimee Stevens">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-  <link rel="stylesheet" href="styles/stylesheets.css">
+  <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/about.css">
-  <title>Aimee's Portfolio</title>
 </head>
 
 <body>
   <header>
-    <h1>Biography</h1>
+    <h1 style="font-size:10vw">Biography</h1>
     <nav>
       <a href="index.html">Home.</a>
       <a class="active" href="about.html">Bio.</a>
@@ -21,39 +25,42 @@
     </nav>
   </header>
   <main>
-    <img src="images/me.png" alt="Aimee's Headshot">
-
-    <section class="align-left">
-      <h3>Professional Summary</h3>
-      <p>As an office assistant at a start-up, I have worn many hats. I have
-        done reception work, customer service, dabbled in HR & marketing, and spent
-        much of my time in facilities. I am now turning to pursue project management
-        as I very much enjoy the planning and executing of a project. I am goal
-        oriented and wish to put forth great results.
+    <section class="bio">
+      <article>
+        <h3><i class="fas fa-briefcase"></i>
+          <br />Professional Summary</h3>
+        <p>As an office assistant at a start-up, I have worn many hats. I have
+          done reception work, customer service, dabbled in HR & marketing, and spent
+          much of my time in facilities. I am now turning to pursue project management
+          as I very much enjoy the planning and executing of a project. I am goal
+          oriented and wish to put forth great results.
+      </article>
+      <figure>
+        <img src="images/me.png" alt="Aimee's Headshot">
+      </figure>
+      <article>
+        <h3><i class="fas fa-graduation-cap"></i>
+          <br />Educational summary</h3>
+        <p>My time at Heptio has lead me down to the path of project managemnet and
+          coding. I began classes at Edmonds Community College (EdCC) for a project
+          management certificate in summer 2018. I will recieve my certificate in
+          March 2019. As of January 2019, I am in the front-end web development
+          certificate program at University of Washington (UW). I am ecstatic to
+          continue this journey and see where it leads me.</p>
+      </article>
     </section>
-
-    <section class="align-right">
-      <h3>Educational summary</h3>
-      <p>My time at Heptio has lead me down to the path of project managemnet and
-        coding. I began classes at Edmonds Community College (EdCC) for a project
-        management certificate in summer 2018. I will recieve my certificate in
-        March 2019. As of January 2019, I am in the front-end web development
-        certificate program at University of Washington (UW). I am ecstatic to
-        continue this journey and see where it leads me.</p>
-    </section>
-
-    <section class="centered">
+    <section class="favorite-quotes">
       <h3>Favorite Quotes:</h3>
-      <ul>
-        <li>"Children aren't coloring books. You don't get to fill them with your
-          favorite colors." - The Kite Runner</li>
-        <li>"Strength does not come from physical capacity. It comes from an
-          indomitable will." - Gandhi</li>
-        <li>"It's not about finding what you like. It's about finding out what you
-          <em>don't</em> like."</li>
-        <li>"everything happens for a reason"</li>
-        <li>"Kindness costs nothing."</li>
-      </ul>
+      <article>
+        <p>"Children aren't coloring books. You don't get to fill them with your
+          favorite colors." - The Kite Runner</p>
+        <p>"Strength does not come from physical capacity. It comes from an
+          indomitable will." - Gandhi</p>
+        <p>"It's not about finding what you like. It's about finding out what you
+          <em>don't</em> like."</p>
+        <p>"everything happens for a reason"</p>
+        <p>"Kindness costs nothing."</p>
+      </article>
     </section>
   </main>
 </body>
