@@ -1,14 +1,15 @@
-ul {
-  margin-top: 40px;
-}
-
-li {
-  list-style-type: square;
-  list-style-position: inside;
+i {
+  color: white;
+  margin: 0 1rem;
 }
 
 img {
   vertical-align: middle;
+}
+
+p {
+  display: flex;
+  justify-content: center;
 }
 
 .underline {
