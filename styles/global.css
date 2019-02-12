@@ -67,6 +67,41 @@ a:visited {
   min-height: 150px;
 }
 
+li {
+  display: inline-block;
+  transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 0;
+  display: inline-block;
+  background-color: #000;
+}
+
+ul li ul:hover,
+ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  display: inline-block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
 footer {
   text-align: center;
 }

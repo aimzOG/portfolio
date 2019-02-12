@@ -10,6 +10,7 @@ img {
 
 img:hover {
   transform: scale(2);
+  transition: ease-in-out 0.5s;
 }
 
 body {

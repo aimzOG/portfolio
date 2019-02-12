@@ -15,10 +15,16 @@
   <header>
     <h1 style="font-size:10vw">Adventures</h1>
     <nav>
-      <a href="index.html">Home.</a>
-      <a href="about.html">Bio.</a>
-      <a href="triumphs.html">Triumphs.</a>
-      <a class="active" href="adventures.html">Adventures.</a>
+      <ul>
+        <li><a href="index.html">Home.</a></li>
+        <li><a href="bio.html">Bio.</a></li>
+        <li><a href="triumphs.html">Triumphs.</a></li>
+        <li><a class="active" href="adventures.html">Adventures.</a>
+          <ul class="sub-menu">
+            <li><a href="adventures.html#travel">Travel</a></li>
+            <li><a href="adventures.html#cooking">Cooking</a> </li>
+          </ul>
+        </li>
     </nav>
   </header>
   <main>
@@ -30,7 +36,7 @@
           aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <aside class="travel-images">
+      <aside class="travel-images" id="travel">
         <div class="item1"><img src="./images/bangkok-sign.jpg" alt="Aimee & Dean in
       front of a Bankok sign"></div>
         <div class="item2"><img src="./images/sunset-cabo.jpg" alt=""></div>
@@ -46,7 +52,7 @@
       </aside>
     </section>
     <section>
-      <div class="cooking-text">
+      <div class="cooking-text" id="cooking">
         <h3><i class="fas fa-utensils"></i>
           Cooking</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
