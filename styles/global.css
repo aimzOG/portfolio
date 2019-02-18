@@ -118,10 +118,10 @@ footer a {
   background-size: cover;
 }
 
-footer a.github {
+.github {
   background-image: url("../images/GitHub-Mark-Light-64px.png");
 }
 
-footer a.linkedin {
+.linkedin {
   background-image: url("../images/In-2C-41px-R.png");
 }
