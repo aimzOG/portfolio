@@ -24,6 +24,10 @@ nav {
   font-size: 40px;
 }
 
+h2 {
+  font-size: 60px;
+}
+
 h3 {
   font-size: 30px;
   text-align: center;
@@ -64,7 +68,7 @@ a:visited {
 }
 /* space between nav & footer */
 .content {
-  min-height: 150px;
+  min-height: 100px;
 }
 
 li {
@@ -104,6 +108,7 @@ ul li ul li {
 
 footer {
   text-align: center;
+  margin: 3rem;
 }
 
 footer a {

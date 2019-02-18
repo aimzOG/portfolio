@@ -2,14 +2,13 @@ i {
   color: white;
   margin: 0 1rem;
 }
-
-img {
-  vertical-align: middle;
-}
-
-p {
+/* p {
   display: flex;
   justify-content: center;
+} */
+img {
+  vertical-align: middle;
+  max-width: 100px;
 }
 
 .underline {
