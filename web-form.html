@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/global.css">
@@ -28,34 +29,43 @@
     </nav>
   </header>
 
-  <p>If you'd like to contact me, send me a message! I'd love to chat with you.</p>
-  <form class="contact-form" action="index.html" method="get">
-    <label>First Name
-      <input type="text" name="firstName" required>
-    </label>
-    <label> Last Name
-      <input type="text" name="lastName">
-    </label>
-    <label>E-mail
-      <input type="email" name="email" placeholder="janesmith@email.com" required>
-    </label>
-    <label>Phone Number
-      <input type="tel" name="phoneNumber" placeholder="(555)-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-    </label>
+  <p> If you'd like to contact me, drop a line using the form below. I'm always
+    up for a conversation! <br />*Please note: I work full time and may take a day or two to respond, but I
+    make it a priority to respond nevertheless.</p>
+  <form method="get" onsubmit="alert('Thanks for your message!');">
     <fieldset>
-      <legend>Preferences</legend>
+      <label>First Name
+        <input type="text" name="firstName" placeholder="Jane" required>
+      </label>
+      <label> Last Name
+        <input type="text" name="lastName" placeholder="Doe" required>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>E-mail
+        <input type="email" name="email" placeholder="j_doe@email.com" required>
+      </label>
+      <label>Phone Number
+        <input type="tel" name="phoneNumber" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>I prefer to be contacted by:</legend>
       <label>
-        <input type="radio" name="e-mail" value="email">
+        <input type="radio" name="contact-preference" value="email">
         E-mail
       </label>
       <label>
-        <input type="radio" name="phone" value="phone">
+        <input type="radio" name="contact-preference" value="phone">
         Phone
       </label>
     </fieldset>
     <label>Message</label>
     <textarea name="message" rows="8" cols="50"></textarea>
-    <input type="submit" value="Send!">
+    <button type="submit" name="submit">
+      <i class="far fa-paper-plane"></i>
+      Send!
+    </button>
   </form>
 </body>
 
