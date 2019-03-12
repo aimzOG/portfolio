@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <a href="#main-content" class="hidden">Skip to main content</a>
   <header>
     <h1 style="font-size:10vw"> Contact Me</h1>
     <nav>
@@ -28,45 +29,46 @@
       </ul>
     </nav>
   </header>
-
-  <p> If you'd like to contact me, drop a line using the form below. I'm always
-    up for a conversation! <br />* Please note: I work full time and may take a day or two to respond, but I
-    make it a priority to respond nevertheless.</p>
-  <form method="get" onsubmit="alert('Thanks for your message!');">
-    <fieldset>
-      <label>First Name
-        <input type="text" name="firstName" placeholder="Jane" required>
-      </label>
-      <label> Last Name
-        <input type="text" name="lastName" placeholder="Doe" required>
-      </label>
-    </fieldset>
-    <fieldset>
-      <label>E-mail
-        <input type="email" name="email" placeholder="j_doe@email.com" required>
-      </label>
-      <label>Phone Number
-        <input type="tel" name="phoneNumber" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-      </label>
-    </fieldset>
-    <fieldset>
-      <legend>I prefer to be contacted by:</legend>
-      <label>
-        <input type="radio" name="contact-preference" value="email">
-        E-mail
-      </label>
-      <label>
-        <input type="radio" name="contact-preference" value="phone">
-        Phone
-      </label>
-    </fieldset>
-    <label>Message</label>
-    <textarea name="message" rows="8" cols="50"></textarea>
-    <button type="submit" name="submit">
-      <i class="far fa-paper-plane"></i>
-      Send!
-    </button>
-  </form>
+  <main id="main-content">
+    <p> If you'd like to contact me, drop a line using the form below. I'm always
+      up for a conversation! <br />* Please note: I work full time and may take a day or two to respond, but I
+      make it a priority to respond nevertheless.</p>
+    <form method="get" onsubmit="alert('Thanks for your message!');">
+      <fieldset>
+        <label>First Name
+          <input type="text" name="firstName" placeholder="Jane" required>
+        </label>
+        <label> Last Name
+          <input type="text" name="lastName" placeholder="Doe" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>E-mail
+          <input type="email" name="email" placeholder="j_doe@email.com" required>
+        </label>
+        <label>Phone Number
+          <input type="tel" name="phoneNumber" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>I prefer to be contacted by:</legend>
+        <label>
+          <input type="radio" name="contact-preference" value="email">
+          E-mail
+        </label>
+        <label>
+          <input type="radio" name="contact-preference" value="phone">
+          Phone
+        </label>
+      </fieldset>
+      <label>Message</label>
+      <textarea name="message" rows="8" cols="50"></textarea>
+      <button type="submit" name="submit">
+        <i class="far fa-paper-plane"></i>
+        Send!
+      </button>
+    </form>
+  </main>
 </body>
 
 </html>
