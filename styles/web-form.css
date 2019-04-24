@@ -16,7 +16,7 @@ textarea {
 
 form {
   display: inline-block;
-  background-color: black;
+  background-color: #000000;
   border-radius: 5%;
   margin: 2rem auto;
 }
@@ -40,7 +40,7 @@ label:first-child {
 
 button {
   background-color: #3A9AFC;
-  color: white;
+  color: #FFFFFF;
   width: 50%;
   font-weight: bolder;
 }
@@ -57,7 +57,7 @@ input[type="radio"] {
 input:focus,
 textarea:focus {
   outline: none;
-  background-color: #ffebe6;
+  background-color: #FFEBE6;
 }
 
 fieldset {

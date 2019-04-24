@@ -31,8 +31,8 @@ body {
   font-family: 'Inconsolata', monospace;
   background-image: url("../images/purple-background.jpg");
   background-size: cover;
-  font-size: 20px;
-  color: #ffebe6;
+  font-size: 1.5rem;
+  color: #FFEBE6;
   text-align: center;
   max-width: 1800px;
   margin: 0 auto;
@@ -40,20 +40,20 @@ body {
 
 h1 {
   font-family: 'Amatic SC', cursive;
-  text-shadow: -3px 6px 3px black;
+  text-shadow: -3px 6px 3px #000000;
   margin: .5rem auto;
   font-size: 8rem;
 }
 
 nav {
-  background: black;
-  font-size: 2.5rem;
+  background: #000000;
+  font-size: 3rem;
   font-family: 'Amatic SC', cursive;
 }
 
 a {
   text-decoration: underline;
-  color: white;
+  color: #FFFFFF;
 }
 
 nav a {
@@ -68,7 +68,7 @@ nav a::after {
   content: "";
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: #FFFFFF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -80,7 +80,7 @@ nav a:hover::after {
 }
 
 a:visited {
-  color: white;
+  color: #FFFFFF;
 }
 
 /* shows which tab is the page you're on */
@@ -120,7 +120,7 @@ ul li ul {
   top: 100%;
   padding: 0;
   display: inline-block;
-  background-color: #000;
+  background-color: #000000;
 }
 
 /*this makes the submenu visible*/
