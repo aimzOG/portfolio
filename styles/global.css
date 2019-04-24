@@ -158,8 +158,8 @@ footer {
 
 footer a {
   display: inline-block;
-  height: 35px;
-  width: 35px;
+  height: 3rem;
+  width: 3rem;
   background-size: cover;
 }
 
