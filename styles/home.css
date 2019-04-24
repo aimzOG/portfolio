@@ -1,4 +1,7 @@
 body {
   text-align: center;
-  margin: 10rem auto 3rem;
+}
+
+h2 {
+  font-family: 'Inconsolata', monopsace;
 }

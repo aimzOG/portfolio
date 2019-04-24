@@ -3,7 +3,8 @@ i {
 }
 
 .intro {
-  margin: 0 4rem
+  Padding: 0 4rem;
+  font-style: italic;
 }
 
 aside {
@@ -50,6 +51,7 @@ section {
 aside[class*="images"] {
   flex: 1;
   justify-content: center;
+  align-content: center;
   display: grid;
   grid-template-columns: 200px 200px 200px;
 }
