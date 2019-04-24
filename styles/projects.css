@@ -15,18 +15,21 @@
 
 /* card container */
 .card-wrapper {
-  height: 20rem;
-  width: 31rem;
+  height: 26rem;
+  width: 40rem;
 }
 
 .blurb {
   height: 10rem;
 }
 
-.back p,
-.description {
-  padding: 3rem 1.5rem;
+.back p {
+  padding: 5rem 3rem;
   margin: 0;
+}
+
+p.description {
+  padding: 6rem 1.5rem
 }
 
 /* card */
@@ -99,6 +102,10 @@
     grid-template-columns: auto;
     grid-auto-flow: row;
     grid-gap: 3rem;
+  }
+
+  p.description {
+    padding: 0 3rem 2rem;
   }
 
 }
