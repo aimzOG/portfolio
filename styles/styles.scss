@@ -1,0 +1,504 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: 0;
+
+  &:focus {
+    left: 0;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  background-image: url("../images/purple-background.jpg");
+  background-size: cover;
+  font-size: 1.5rem;
+  color: #FFEBE6;
+  text-align: center;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  text-shadow: -3px 6px 3px #000000;
+  margin: .5rem auto;
+  font-size: 8rem;
+}
+
+nav {
+  background: #000000;
+  font-size: 3rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+a {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+
+  &::after {
+    transition: all 0.2s ease-in-out;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+/* this makes the underline for nav hrefs */
+
+/* this makes the underline for hrefs show */
+
+a:visited {
+  color: #FFFFFF;
+}
+
+/* shows which tab is the page you're on */
+
+.active::after {
+  width: 100%;
+}
+
+/* space between nav & footer */
+
+.content {
+  min-height: 100px;
+}
+
+li {
+  display: inline-block;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ul li {
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  z-index: 1;
+}
+
+/*this hides the submenu*/
+
+ul li {
+  ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    top: 100%;
+    padding: 0;
+    display: inline-block;
+    background-color: #000000;
+
+    &:hover {
+      visibility: visible;
+      opacity: 1;
+      display: inline-block;
+      border-radius: 10px;
+    }
+  }
+
+  &:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  ul li {
+    clear: both;
+    width: 100%;
+  }
+}
+
+/*this makes the submenu visible*/
+
+h2 {
+  /* font-size: 60px; */
+  font-size: 4rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+h3 {
+  /* font-size: 30px; */
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+footer {
+  text-align: center;
+  margin: 3rem;
+
+  a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background-size: cover;
+  }
+}
+
+.github {
+  background-image: url("../images/GitHub-Mark-Light-64px.png");
+}
+
+.linkedin {
+  background-image: url("../images/In-2C-41px-R.png");
+}
+
+.contact {
+  background-image: url("../images/review.png");
+}
+
+body {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+h2 {
+  font-family: 'Inconsolata', monopsace;
+}
+
+i {
+  color: white;
+}
+
+.intro {
+  Padding: 0 4rem;
+  font-style: italic;
+}
+
+aside {
+  border: 10px solid black;
+  background-color: black;
+  border-radius: 45px;
+
+  >div {
+    display: flex;
+  }
+}
+
+img {
+  max-width: 200px;
+  height: auto;
+  border: 5px solid black;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(2);
+    transition: ease-in-out 0.5s;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 4rem;
+  background-color: black;
+  box-shadow: 3px 3px 3px 3px #0d0d0d;
+  border-radius: 45px;
+}
+
+.culinary-text,
+.travel-text {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+aside[class*="images"] {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.travel-images {
+  grid-template-rows: 150px 150px;
+}
+
+.food-images {
+  grid-template-rows: 175px 175px 175px;
+}
+
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column;
+  }
+
+  .culinary-text {
+    order: -1;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border: thick solid black;
+  border-radius: 45px;
+}
+
+.bio article {
+  background-color: black;
+  border-radius: 45px;
+  max-width: 75%;
+  padding: 0 2rem;
+}
+
+i {
+  color: white;
+}
+
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    flex-shrink: 1;
+  }
+}
+
+article,
+.bio img {
+  margin: 1.5rem auto;
+}
+
+.projects {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-flow: row;
+  grid-gap: 2em;
+  justify-content: center;
+}
+
+/* content container for the webpage */
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* card container */
+
+.card-wrapper {
+  height: 26rem;
+  width: 40rem;
+}
+
+.blurb {
+  height: 10rem;
+}
+
+.back p {
+  padding: 5rem 3rem;
+  margin: 0;
+}
+
+p.description {
+  padding: 4rem 1.5rem;
+}
+
+/* card */
+
+.card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+}
+
+/* front side of the card */
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  line-height: 208px;
+  border-radius: 10px;
+}
+
+.back {
+  border-radius: 10px;
+}
+
+.dogs {
+  background-image: url("../images/adopt-a-dog.png");
+  background-size: cover;
+}
+
+.kitties {
+  background-image: url("../images/kitties.png");
+  background-size: cover;
+}
+
+.archery {
+  background-image: url("../images/archery.png");
+  background-size: cover;
+}
+
+/* back side of the card */
+
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  color: #000000;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+
+  i {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+
+    &:visited {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+}
+
+/* flipping the card on hover */
+
+.card:hover {
+  transform: rotateY(-180deg);
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+    grid-gap: 3rem;
+  }
+
+  p.description {
+    padding: 0 3rem 2rem;
+    margin: 0;
+  }
+}
+
+p {
+  margin: 1rem;
+  padding: 0 4rem;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1.5rem auto 2rem;
+  border-radius: 15px;
+  color: #480B34;
+}
+
+form {
+  display: inline-block;
+  background-color: #000000;
+  border-radius: 5%;
+  margin: 2rem auto;
+}
+
+input {
+  text-align: center;
+
+  &[name="firstName"] {
+    text-transform: capitalize;
+  }
+}
+
+[name="lastName"] {
+  text-transform: capitalize;
+}
+
+legend {
+  margin: 0 auto;
+}
+
+label:first-child {
+  margin-right: 2rem;
+}
+
+button {
+  background-color: #3A9AFC;
+  color: #FFFFFF;
+  width: 50%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.submit {
+  display: block;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background-color: #FFEBE6;
+}
+
+fieldset {
+  border: none;
+
+  input {
+    display: inline;
+  }
+}
