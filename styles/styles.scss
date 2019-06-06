@@ -29,13 +29,18 @@ html {
 
 body {
   font-family: 'Inconsolata', monospace;
-  background-image: url("../images/purple-background.jpg");
-  background-size: cover;
-  font-size: 1.5rem;
+  font-size: 20px;
   color: #FFEBE6;
   text-align: center;
   max-width: 1800px;
   margin: 0 auto;
+}
+
+.background {
+  background-image: url(../images/purple-background.jpg);
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -49,10 +54,31 @@ nav {
   background: #000000;
   font-size: 3rem;
   font-family: 'Amatic SC', cursive;
+
+  &a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+
+    &::after {
+      transition: all 0.2s ease-in-out;
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: #FFFFFF;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #FFFFFF;
 }
 
@@ -89,12 +115,6 @@ a:visited {
 
 .active::after {
   width: 100%;
-}
-
-/* space between nav & footer */
-
-.content {
-  min-height: 100px;
 }
 
 li {
@@ -154,7 +174,7 @@ ul li {
 h2 {
   /* font-size: 60px; */
   font-size: 4rem;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Inconsolata', monospace;
 }
 
 h3 {
@@ -164,9 +184,10 @@ h3 {
   font-family: 'Inconsolata', monospace;
 }
 
-footer {
-  text-align: center;
-  margin: 3rem;
+#home-footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
 
   a {
     display: inline-block;
@@ -188,101 +209,10 @@ footer {
   background-image: url("../images/review.png");
 }
 
-body {
-  text-align: center;
-  padding-top: 10rem;
-}
-
-h2 {
-  font-family: 'Inconsolata', monopsace;
-}
-
-i {
-  color: white;
-}
-
-.intro {
-  Padding: 0 4rem;
-  font-style: italic;
-}
-
-aside {
-  border: 10px solid black;
-  background-color: black;
-  border-radius: 45px;
-
-  >div {
-    display: flex;
-  }
-}
-
-img {
-  max-width: 200px;
-  height: auto;
-  border: 5px solid black;
-  overflow: hidden;
-
-  &:hover {
-    transform: scale(2);
-    transition: ease-in-out 0.5s;
-  }
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-  margin: 2rem 4rem;
-  background-color: black;
-  box-shadow: 3px 3px 3px 3px #0d0d0d;
-  border-radius: 45px;
-}
-
-.culinary-text,
-.travel-text {
-  flex: 1;
-  justify-content: center;
-  align-content: center;
-  padding: 0 2rem;
-  text-align: center;
-}
-
-aside[class*="images"] {
-  flex: 1;
-  justify-content: center;
-  align-content: center;
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-}
-
-.travel-images {
-  grid-template-rows: 150px 150px;
-}
-
-.food-images {
-  grid-template-rows: 175px 175px 175px;
-}
-
-@media (max-width: 1200px) {
-  section {
-    flex-direction: column;
-  }
-
-  .culinary-text {
-    order: -1;
-  }
-}
-
 img {
   vertical-align: middle;
   border: thick solid black;
-  border-radius: 45px;
-}
-
-.bio article {
-  background-color: black;
-  border-radius: 45px;
-  max-width: 75%;
-  padding: 0 2rem;
+  border-radius: 25px;
 }
 
 i {
@@ -291,17 +221,17 @@ i {
 
 .bio {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border-radius: 45px;
 
-  img {
-    flex-shrink: 1;
+  &img:hover {
+    transform: none;
+    transition: none;
   }
-}
-
-article,
-.bio img {
-  margin: 1.5rem auto;
 }
 
 .projects {
@@ -323,8 +253,8 @@ article,
 /* card container */
 
 .card-wrapper {
-  height: 26rem;
-  width: 40rem;
+  height: 20rem;
+  width: 34rem;
 }
 
 .blurb {
@@ -332,7 +262,7 @@ article,
 }
 
 .back p {
-  padding: 5rem 3rem;
+  padding: 4rem 3rem;
   margin: 0;
 }
 
@@ -370,8 +300,8 @@ p.description {
   background-size: cover;
 }
 
-.kitties {
-  background-image: url("../images/kitties.png");
+.massage {
+  background-image: url("../images/in-touch-massage.png");
   background-size: cover;
 }
 
@@ -431,7 +361,7 @@ p.description {
 
 p {
   margin: 1rem;
-  padding: 0 4rem;
+  // padding: 0 4rem;
 }
 
 button,
@@ -500,5 +430,89 @@ fieldset {
 
   input {
     display: inline;
+  }
+}
+
+i {
+  color: white;
+}
+
+.intro {
+  padding: 0 4rem;
+  font-style: italic;
+}
+
+// aside {
+//   border: 10px solid black;
+//   background-color: black;
+//   border-radius: 45px;
+
+//   >div {
+//     display: flex;
+//   }
+// }
+
+img {
+  max-width: 200px;
+  height: auto;
+  border: 5px solid black;
+  object-fit: cover;
+
+  &:hover {
+    transform: scale(2);
+    transition: ease-in-out 0.5s;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 4rem;
+  background-color: #000;
+  box-shadow: 3px 3px 3px 3px #0d0d0d;
+  border-radius: 45px;
+  justify-content: center;
+  align-items: center;
+
+  .culinary-text,
+  .travel-text {
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  aside {
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 45px;
+
+    >div {
+      display: flex;
+    }
+
+    &.travel-images {
+      grid-template-rows: 150px 150px;
+    }
+
+    &.food-images {
+      grid-template-rows: 175px 175px 175px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column;
+  }
+
+  .culinary-text {
+    order: -1;
   }
 }
